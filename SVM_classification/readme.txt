@@ -89,43 +89,6 @@ NOTEBOOK WORKFLOW:
 9. Evaluate the predictions.
    The predictions are compared with y_test, the known target values for the held-back test records.
 
-IMPORTANT FUNCTIONS AND OBJECTS:
-pd.read_csv(file_path)
-    Loads the dataset from a CSV file into a pandas DataFrame.
-
-train_test_split(X, y, ...)
-    Splits the input features and matching target values into training and test sets.
-
-StandardScaler()
-    Scales numeric features using statistics learned from the training data.
-
-OneHotEncoder(handle_unknown="ignore")
-    Converts text categories into numeric indicator features.
-
-ColumnTransformer(...)
-    Applies different preprocessing steps to different feature columns.
-
-SVC(kernel="rbf")
-    Creates an SVM classifier using the RBF kernel.
-
-Pipeline(...)
-    Connects preprocessing and classification so they are applied in the correct order.
-
-model.fit(X_train, y_train)
-    Learns preprocessing values and the SVM classification boundary from the training data.
-
-model.predict(X_test)
-    Predicts a class label for each test example.
-
-accuracy_score(y_test, predictions)
-    Calculates the fraction of test predictions that match the actual labels.
-
-confusion_matrix(y_test, predictions)
-    Counts correct and incorrect predictions for each actual and predicted class.
-
-classification_report(y_test, predictions)
-    Reports precision, recall, F1-score, and support for each class.
-
 
 EVALUATION METRICS:
 Accuracy
